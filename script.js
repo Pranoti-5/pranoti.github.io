@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Performed exploratory data analysis (EDA) to identify survival trends based on age, gender, and ticket class. Created summary statistics and visualizations to support data-driven insights. Gained hands-on practice with data cleaning, feature understanding, and plotting.',
             technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn (basics)', 'SkLearn (basics)'],
             liveLink: '', // No live demo for this example
-            githubLink: 'https://github.com/Pranoti-5/Titanic-EDA'
+            githubLink:'https://www.google.com' //'https://github.com/Pranoti-5/Titanic-EDA'
         }
         // Add data for other projects here, using the same 'data-project' value as the key
     };
