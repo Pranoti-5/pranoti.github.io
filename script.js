@@ -92,9 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Close the modal when the user clicks outside of the modal content
-    window.addEventListener('click', (event) => {
-        if (event.target === projectModal) {
+    // Close the modal when the user clicks outside of the modal content
+    window.addEventListener('click', (event) => { // Start around Line 111
+        // If the modal is showing and the clicked element is the modal itself (the background)
+        if (projectModal.classList.contains('show') && event.target === projectModal) { // New check
             projectModal.classList.remove('show'); // Use class to hide modal with transition
         }
-    });
+    }); // End around Line 117 (the closing parenthesis and semicolon)
 });
