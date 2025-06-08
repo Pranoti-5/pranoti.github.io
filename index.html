@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranoti S</title>
+    <!-- Google Fonts: Poppins for headings, Roboto for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Removed the mode toggle button -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#intro" class="site-title">Pranoti Sawakhande</a>
+            <ul class="nav-links">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#responsibility">Responsibility</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Hero Section (Landing Page) -->
+    <section id="intro" class="hero">
+        <!-- Background Video - Direct child of the section -->
+        <video autoplay muted loop id="hero-video">
+            <source src="VideoP.mp4" type="video/mp4">
+            <!-- Add other video formats (webm, ogv) for broader browser compatibility -->
+            <!-- <source src="hero-background-video.webm" type="video/webm"> -->
+            <!-- <source src="hero-background-video.ogv" type="video/ogv"> -->
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay - Direct child of the section, placed over the video -->
+        <div class="hero-overlay"></div>
+
+        <!-- Container with Content - Also a direct child of the section -->
+        <div class="container">
+            <div class="hero-content">
+                <img src="Portfolio image.jpg" alt="[Your Name] Profile Photo" class="profile-img">
+                <h1>Hello, I'm Pranoti</h1>
+                <p class="tagline">Data Scientist | Transforming data into actionable insights</p>
+                <p class="intro-text">Welcome to my portfolio! I'm a recent graduate with a strong foundation in technology and a deep interest in applying data science principles to solve complex problems. Explore my projects and skills to see how I leverage data to uncover patterns and drive informed decisions.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <!-- Education Entry 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🎓</div>
+                    <div class="timeline-content">
+                        <h3>Bachelors of Technology</h3>
+                        <h4>Malaviya National Institute of Technology (NIT Jaipur), Jaipur</h4>
+                        <p class="timeline-date">2020-2024</p>
+                    </div>
+                </div>
+                 <!-- Education Entry 2 -->
+                <div class="timeline-item">
+                     <div class="timeline-icon">📚</div>
+                    <div class="timeline-content">
+                        <h3>Junior College</h3>
+                        <h4>JK College, Pune</h4>
+                        <p class="timeline-date">2018-2020</p>
+                        
+                    </div>
+                </div>
+                <div class="timeline-item">
+                     <div class="timeline-icon">📚</div>
+                    <div class="timeline-content">
+                        <h3>School</h3>
+                        <h4>Hume McHenry School, Pune</h4>
+                        <p class="timeline-date">2011-2018</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="timeline">
+                <!-- Experience Entry 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🏢</div>
+                    <div class="timeline-content">
+                         <h3>Patent Associate Intern</h3>
+                         <h4>K&S Partners</h4>
+                        <p class="timeline-date">January 2024 - June 2024</p>
+                        <ul>
+                            <li>Conducted detailed patent analysis and prepared initial drafts, achieving a 90-95% accuracy rate.</li>
+                            <li>Volunteered to support a few senior associates, aside from my mentor, by aiding with 4-5 cases.</li>
+                            <li>Composed responses, drawing sheets, and hearing strategies for approximately 10-12 cases from various clients.</li>
+                        </ul>
+                    </div>
+                
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-item" data-project="library-management">
+                    <h3>Library Management System</h3>
+                </div>
+                 <!-- Project 2 -->
+                <div class="project-item" data-project="titanic-eda">
+                    <h3>EDA on Titanic Dataset</h3>
+                </div>
+                <!-- Add more project items here, use a unique `data-project` attribute for each -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal (Hidden by default) -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-project-details">
+                <!-- Project details will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2>Certificates</h2>
+            <ul class="certificate-list">
+                <!-- Certificate 1 -->
+                <li><a href="[https://drive.google.com/file/d/1S8RS_AdQ3bB5ifvmlhEf14WznlUMqloL/view?usp=sharing]" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> Introduction to Data Analysis using Microsoft Excel (Coursera)</a></li>
+                 <!-- Certificate 2 -->
+                <li><a href="[https://drive.google.com/file/d/1lQ3BuT9ljXBs021R0jcQE6to2S7Z8yw6/view?usp=sharing]" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> Data Science by British Airways (Forage)</a></li>
+                 <!-- Certificate 3 -->
+                <li><a href="[https://drive.google.com/file/d/1qY3QZVYpQZhRqBA5PGQ519EliApqZSVZ/view?usp=sharing]" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> SQL (basic)</a></li>
+                  <!-- Certificate 4 -->
+                <li><a href="[https://drive.google.com/file/d/1tohAB3I1SjwWrtEHPKXFZ2Vl8uUkn1zv/view?usp=sharing]" target="_blank" rel="noopener noreferrer"><i class="fas fa-award"></i> Web Development (Udemy)</a></li>
+                <!-- Add more certificate entries as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Java (Basics)</li>
+                        <li>Power BI</li>
+                        <li>MS Excel</li>
+                        <li>MS Powerpoint</li>
+                        <li>Canva</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn (basics)</li>
+                        <li>SkLearn (basics)</li>
+                        <li>Data Cleaning</li>
+                        <li>Basic EDA</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Power Skills (Soft Skills)</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Collaboration</li>
+                        <li>Teamwork</li>
+                        <li>Attention to Detail</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Positions of Responsibility Section -->
+    <section id="responsibility" class="section">
+        <div class="container">
+            <h2>Positions of Responsibility & Extracurriculars</h2>
+            <div class="timeline">
+                <!-- Responsibility Entry 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">🏆</div>
+                    <div class="timeline-content">
+                        <h3>Member of Logistics Team, CACS (BlitzSchlag)</h3>
+                        <h4>Malaviya National Institute of Technology</h4>
+                        <p class="timeline-date">February 2023</p>
+                        <p>Supervised Logistics Team during the cultural fest of MNIT, overseeing a team of 15 students for an event under the Logistics Team, CACS.</p>
+                    </div>
+                </div>
+                 <!-- Responsibility Entry 2 -->
+                <div class="timeline-item">
+                     <div class="timeline-icon">🤝</div>
+                    <div class="timeline-content">
+                        <h3>Member of CHAPTERS Team, Alumni Community (ALCOM)</h3>
+                        <h4>Malaviya National Institute of Technology</h4>
+                        <p class="timeline-date">December 2021</p>
+                        <p>Supported the decor team in an event for Alumnus, sent invitations, and contacted almost 17-20 Alumni.</p>
+                    </div>
+                </div>
+                 <!-- Responsibility Entry 3 -->
+                <div class="timeline-item">
+                     <div class="timeline-icon">📣</div>
+                    <div class="timeline-content">
+                        <h3>Member of PUBLICITY Team, Think India Club</h3>
+                        <h4>Malaviya National Institute of Technology</h4>
+                        <p class="timeline-date">March 2021</p>
+                        <p>Coordinated a 5-member team to develop and implement innovative publicity strategies for Think India Club events; achieved a 35% boost in event participation.</p>
+                    </div>
+                </div>
+                 <!-- Responsibility Entry 4 -->
+                <div class="timeline-item">
+                     <div class="timeline-icon">🙋‍♀️</div>
+                    <div class="timeline-content">
+                        <h3>Volunteer Experience</h3>
+                        <ul>
+                             <li>Supported onboarding of more than 100 new students with 99% accuracy in documentation.</li>
+                            <li>Participated in a flash mob traffic awareness campaign.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Add more entries as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <ul class="hobbies-list">
+                <li><i class="fas fa-dance"></i> Trained dancer (5 years)</li> <!-- Example icon -->
+                <li><i class="fas fa-microphone"></i> Self-taught singer</li> <!-- Example icon -->
+                <!-- Add more hobbies with icons -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+     <section id="contact" class="section">
+         <div class="container">
+             <h2>Get in Touch</h2>
+             <p>I'm always open to discussing new projects, opportunities, or just saying hello.</p>
+             <div class="contact-links">
+                  <a href="[https://github.com/Pranoti-5]" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i> GitHub</a>
+                <a href="[https://www.linkedin.com/in/pranoti-s/]" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="mailto:[2020umt1575@mnit.ac.in]" aria-label="Email Address"><i class="fas fa-envelope"></i> Email</a>
+             </div>
+         </div>
+     </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pranoti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
