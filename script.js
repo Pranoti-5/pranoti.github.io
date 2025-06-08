@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Developed intuitive and easy-to-navigate interface for seamless interaction with 88% user satisfaction. Boosted the efficiency of library operations, reducing manual effort by 95% and minimizing errors to 2%. Employed SQL to create and manage a structured database with 98% data integrity rate.',
             technologies: ['Python', 'SQL'],
             liveLink: '',
-            githubLink: '[https://github.com/Pranoti-5/Library-Management]'
+            githubLink: 'https://github.com/Pranoti-5/Library-Management'
         },
         'titanic-eda': {
             title: 'EDA on Titanic Dataset',
             description: 'Performed exploratory data analysis (EDA) to identify survival trends based on age, gender, and ticket class. Created summary statistics and visualizations to support data-driven insights. Gained hands-on practice with data cleaning, feature understanding, and plotting.',
             technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn (basics)', 'SkLearn (basics)'],
             liveLink: '', // No live demo for this example
-            githubLink: '[https://github.com/Pranoti-5/Titanic-EDA]'
+            githubLink: 'https://github.com/Pranoti-5/Titanic-EDA'
         }
         // Add data for other projects here, using the same 'data-project' value as the key
     };
